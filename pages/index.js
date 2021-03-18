@@ -1,65 +1,91 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import { Flex, Container, Box, Button } from "@chakra-ui/react"
+import Navbar from './components/navBar';
 
 export default function Home() {
+	const pageContent = [
+		{
+			heading: 'Higher Liquidity,',
+			headingLine2: 'Maximum Returns',
+			desc: 'With PieFie, you can maximize your returns while maintaining your liquidity.',
+			img: '',
+			bg: 'white'
+		},
+		{
+			heading: '20-40% Better Returns',
+			desc: 'We help you to get 3X the average everywhere',
+			img: '',
+			bg: 'white'
+		},
+		{
+			heading: 'AI Powered',
+			headingLine2: 'Loan Underwriting',
+			desc: 'Our topnotch AI tech will filter out the right candidates for you',
+			img: '',
+			bg: 'primary'
+		},
+		{
+			heading: 'First in the Industry',
+			headingLine2: 'Risk Sharing Techniques',
+			desc: 'Our Risk sharing technique is one of it`s kind',
+			img: '',
+			bg: 'primary'
+		},
+		{
+			heading: 'Social Finance',
+			headingLine2: 'Lending',
+			desc: 'Heard about Lending club? We do that too.',
+			img: '',
+			bg: 'white'
+		}
+	]
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+		<>
+			<Navbar h="75px"/>
+			<Box
+				bg="darkGreen"
+				color="#D0F8DD"
+			>
+				<Container
+					h={'50vh'}
+					display='flex'
+					alignItems={{lg: 'center', sm: 'flex-start'}}
+					fontSize="56px"
+					justifyContent="center"
+				>
+					Know who is on your side.
+				</Container>
+			</Box>
+			{pageContent.map((content, index) => {
+				return (
+					<Flex
+						pt="80px"
+						pb="80px"
+						color='black'
+						background={index % 2 === 0 ? 'white' : '#D0F8DD'}
+						// height={index === 0 || index === 1 ? "calc(50vh - 62.5px)" : "50vh"}
+						height="50vh"
+					>
+						<Container
+							display="flex"
+							flexDirection={{
+								lg: index % 2 === 0 ? 'row': 'row-reverse',
+								sm: 'column'
+							}}
+						>
+							<Box w="10%"></Box>
+							<Box w="40%" margin="auto">
+								<Box fontSize="2.5rem">{content.heading}</Box>
+								<Box fontSize="2.5rem">{content.headingLine2}</Box>
+								<Box w="300px">{content.desc}</Box>
+							</Box>
+							<Box w="40%">
+								<img src={content.img}></img>
+							</Box>
+							<Box w="10%"></Box>
+						</Container>
+					</Flex>
+				)
+			})}
+		</>
   )
 }
