@@ -1,12 +1,12 @@
 const Container = {
   baseStyle: {
     margin: 'auto',
-    w: {
+    maxW: {
       lg:'1380px',
       sm:'100%'
     },
-    maxWidth: 'inherit'
+    w: '100%'
   },
 }
 
-export default Container
+export default Container;
