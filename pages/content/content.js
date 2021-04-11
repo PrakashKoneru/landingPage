@@ -3,34 +3,34 @@ const primaryInvestorContent = [
 			heading: 'Higher Liquidity,',
 			headingLine2: 'Maximum Returns',
 			desc: 'With PieFie, you can maximize your returns while maintaining your liquidity.',
-			img: '',
+			img: '/boomerang.svg',
 			bg: 'white'
 	},
 	{
 			heading: '20-40% Better Returns',
 			desc: 'We help you to get 3X the average everywhere',
-			img: '',
+			img: '/boomerang.svg',
 			bg: 'white'
 	},
 	{
 			heading: 'AI Powered',
 			headingLine2: 'Loan Underwriting',
 			desc: 'Our topnotch AI tech will filter out the right candidates for you',
-			img: '',
+			img: '/boomerang.svg',
 			bg: 'primary'
 	},
 	{
 			heading: 'First in the Industry',
 			headingLine2: 'Risk Sharing Techniques',
 			desc: 'Our Risk sharing technique is one of it`s kind',
-			img: '',
+			img: '/boomerang.svg',
 			bg: 'primary'
 	},
 	{
 			heading: 'Social Finance',
 			headingLine2: 'Lending',
 			desc: 'Heard about Lending club? We do that too.',
-			img: '',
+			img: '/boomerang.svg',
 			bg: 'white'
 	}
 ]
