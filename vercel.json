@@ -1,0 +1,15 @@
+{
+  "env": {
+    "FAUNADB_SECRET": "@faunadb_secret_key"
+  },
+  "build": {
+      "env": {
+          "FAUNADB_SECRET": "@faunadb_secret_key"
+      }
+  },
+  "dev": {
+      "env": {
+          "FAUNADB_SECRET": "@faunadb_secret_key"
+      }
+  }
+}
