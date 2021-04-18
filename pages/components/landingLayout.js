@@ -4,7 +4,7 @@ import { Flex, Container, Box } from "@chakra-ui/react"
 const LandingLayout = ({
 	pageContent,
 	pageContent2,
-	pageHeroText,
+	pageHeroText = [],
 	pageHeroColor,
 	pageHeroBg,
 	pageContentBg
