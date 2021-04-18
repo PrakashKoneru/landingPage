@@ -14,7 +14,6 @@ const emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+
 
 export default ({ submissionSuccesful = () => {} }) => {
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
-  console.log(register, useForm);
   const postData = async (data) => {
     try {
       const post = await axios.post('/api', data);
