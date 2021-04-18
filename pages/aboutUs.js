@@ -7,7 +7,7 @@ const AboutUs = () => {
     <div>
       <LandingLayout 
         pageContent={aboutUsContent}
-        pageHeroText='Time is money, literally'
+        pageHeroText={['Time is money, literally']}
         pageHeroColor="#EBEDF7"
         pageHeroBg="primary"
         pageContentBg='#EBEDF7'

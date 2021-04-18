@@ -7,7 +7,7 @@ const Partnerships = () => {
     <div>
       <LandingLayout 
         pageContent={secondaryInvestorContent}
-        pageHeroText='Time is money, literally'
+        pageHeroText={['Time is money, literally']}
         pageHeroColor="#D0F8DD"
         pageHeroBg="darkGreen"
         pageContentBg='#D0F8DD'
