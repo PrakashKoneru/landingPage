@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Flex, Container, Box } from "@chakra-ui/react"
-import { primaryInvestorContent, secondaryInvestorContent } from './components/content/content';
+import { primaryInvestorContent, secondaryInvestorContent } from '../content/content';
 
 const Investors = () => {
   const [activeTab, setActiveTab] = useState('Big Banks');

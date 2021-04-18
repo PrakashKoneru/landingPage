@@ -1,6 +1,6 @@
 import { Box, Flex, Container } from '@chakra-ui/react';
 import LandingLayout from './components/landingLayout';
-import { borrowersContent } from './components/content/content';
+import { borrowersContent } from '../content/content';
 
 export default function Home() {
   return (
