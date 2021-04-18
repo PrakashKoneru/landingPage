@@ -5,16 +5,32 @@ import { borrowersContent } from '../content/content';
 export default function Home() {
   return (
 		<>
-			<LandingLayout
-        pageContent={borrowersContent}
-        pageHeroText={[
-          'Need more time to pay off your debts?', 
-          'Know who is on your side.'
-        ]}
-        pageHeroColor="#EDE9E5"
-        pageHeroBg="mustard"
-        pageContentBg='#EDE9E5'
-      />
+			<Box
+				bg='mustard'
+				color='#EDE9E5'
+			>
+				<Container
+					h={'50vh'}
+					display='flex'
+					alignItems={{
+						lg: 'center',
+						sm: 'flex-start'
+					}}
+					justifyContent="center"
+					flexDirection="column"
+				>
+					<Box
+						fontSize="56px"
+					>
+						Need more time to pay off your debts?
+					</Box>
+					<Box
+						fontSize="56px"
+					>
+						Know who is on your side.
+					</Box>
+				</Container>
+			</Box>
       <Box bg="#EDE9E5">
         <Container
           display="flex"
@@ -56,6 +72,7 @@ export default function Home() {
       {borrowersContent.map((content, index) => {
 				return (
 					<Flex
+						key={index}
 						py="80px"
 						color='black'
 						background={index % 2 === 0 ? 'white' : '#EDE9E5'}
