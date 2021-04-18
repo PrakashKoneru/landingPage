@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Button } from '@chakra-ui/react';
+import { Button, Input, Checkbox } from '@chakra-ui/react';
 import { useForm } from "react-hook-form";
 // import styles from '../../styles/form.module.css'
 
@@ -29,15 +29,18 @@ export default ({ submissionSuccesful = () => {} }) => {
   return (
     <>
       <form onSubmit={handleSubmit(postData)}>
-        <div>
-          <input placeholder="name"
+        <div mt="15px">
+          <Input
+            placeholder="name"
             {...register("name", { required: true })}
             type='text' 
           />
           {errors.name && <p style={{ marginTop: '5px', color: 'red', fontWeight: '400' }}>Name is required</p>}
         </div>
         <div>
-          <input placeholder="Email"
+          <Input
+            placeholder="Email"
+            mt="5px"
             {...register("email", { required: true, pattern: emailPattern })}
             type='text'
           />
@@ -45,10 +48,9 @@ export default ({ submissionSuccesful = () => {} }) => {
         </div>
         <div>
           <div style={{ display: 'flex', alignItems: 'center' }}>
-            <input
+            <Checkbox
               name="checked"
               {...register("checked", { required: true })}
-              type='checkbox'
               height="10px"
               width="10px"
             />

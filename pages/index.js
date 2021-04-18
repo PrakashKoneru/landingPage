@@ -120,17 +120,6 @@ export default function Home() {
 					We are with you until the end. We Promise.
 				</Container>
 			</Box>
-			<Box height="250px">
-				<Container
-					display="flex"
-					justifyContent="center"
-					fontSize="2.5rem"
-					alignItems="center"
-					height="100%"
-				>
-					Want to know more?
-				</Container>
-			</Box>
 		</>
   )
 }
