@@ -24,6 +24,7 @@ const LandingLayout = ({
 						sm: 'flex-start'
 					}}
 					justifyContent="center"
+					flexDirection="column"
 				>
 					{
 						pageContent2 && (
@@ -52,14 +53,17 @@ const LandingLayout = ({
 							</Flex>
 						)
 					}
-					<Box
-						fontSize="56px"
-					>
-						{pageHeroText}
-					</Box>
+					{pageHeroText.map((each, index) => {
+						return (<Box
+							fontSize="56px"
+							key={index}
+						>
+							{each}
+						</Box>)
+					})}
 				</Container>
 			</Box>
-			{activeTab.map((content, index) => {
+			{/* {activeTab.map((content, index) => {
 				return (
 					<Flex
 						pt="80px"
@@ -89,7 +93,7 @@ const LandingLayout = ({
 						</Container>
 					</Flex>
 				)
-			})}
+			})} */}
 		</>
 	)
 };

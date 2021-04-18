@@ -1,6 +1,6 @@
 import React from 'react';
 import LandingLayout from './components/landingLayout';
-import { secondaryInvestorContent } from './content/content';
+import { secondaryInvestorContent } from './components/content/content';
 
 const Partnerships = () => {
   return (

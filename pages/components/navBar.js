@@ -16,6 +16,7 @@ function Navbar({ ...props }) {
       right="0"
       zIndex="1000"
       background="white"
+      display={{ lg: 'block', sm: "none" }}
     >
       <Container
         as="header"

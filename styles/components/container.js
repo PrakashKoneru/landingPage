@@ -3,7 +3,7 @@ const Container = {
     margin: 'auto',
     maxW: {
       lg:'1380px',
-      sm:'100%'
+      sm:'none'
     },
     w: '100%'
   },

@@ -1,6 +1,6 @@
 import React from 'react';
 import LandingLayout from './components/landingLayout';
-import { aboutUsContent } from './content/content';
+import { aboutUsContent } from './components/content/content';
 
 const AboutUs = () => {
   return (
