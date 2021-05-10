@@ -42,6 +42,7 @@ export default function Simple() {
 			>
         <Flex
 					h="9vh"
+					maxHeight="90px"
 					alignItems={'center'}
 					justifyContent={{
 						md: 'space-between',
@@ -109,6 +110,7 @@ export default function Simple() {
 							cursor='pointer'
 							alignItems="center"
 							h="9vh"
+							maxHeight="90px"
 							py="1px"
 						>
 							<Link
