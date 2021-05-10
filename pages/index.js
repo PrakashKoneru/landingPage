@@ -57,20 +57,36 @@ export default function Home() {
 						sm: "25px"
 					}}
 					py={{ sm: "50px", md: "none" }}
-          minHeight="50vh"
+					minHeight="50vh"
+					flexWrap="wrap"
         >
           <Box
             width={{ lg: "50%", sm: "100%" }}
             display="flex"
             flexDirection="column"
-            alignItems={{ md: "center", sm: "flex-start" }}
+						// alignItems={{ md: "center", sm: "flex-start" }}
+						alignItems="center"
             justifyContent="flex-start"
             minHeight="150px"
 						// mt={{ lg: "0px", sm: "30px" }}
           >
             <Box fontSize={{ md: '2.5rem', sm: '40px' }}>Lowest Interest Challenge</Box>
-            <Box fontSize={{ md: '1.5rem', sm: '18px' }} px={{ sm:"5px", md: "0px" }} mt="8px">Check your rate for free.</Box>
-            <Box fontSize={{ md: '1rem', sm: '18px' }} px={{ sm:"5px", md: "0px" }} mt="8px">Get pre-approval without hurting your credit.</Box>
+            <Box
+							// fontSize={{ md: '1.5rem', sm: '18px' }}
+							fontSize="1.5rem"
+							px={{ sm:"5px", md: "0px" }}
+							mt="8px"
+						>
+							Check your rate for free.
+						</Box>
+            <Box
+							// fontSize={{ md: '1rem', sm: '18px' }}
+							fontSize="1rem"
+							px={{ sm:"5px", md: "0px" }}
+							mt="8px"
+						>
+							Get pre-approval without hurting your credit.
+						</Box>
           </Box>
           <Box
             minHeight="150px"
@@ -78,11 +94,12 @@ export default function Home() {
             display="flex"
             flexDirection="column"
             justifyContent="flex-start"
-            alignItems={{ md: "center", sm: "flex-start"}}
+						// alignItems={{ md: "center", sm: "flex-start"}}
+						alignItems="center"
             mt={{ sm: "30px", lg: "0px" }}
           >
             <Box fontSize={{ md: '2.5rem', sm: '40px' }}>Faster... Simpler... Safer.</Box>
-            <Box fontSize={{ md: '1.5rem', sm: '18px' }} px={{ sm:"5px", md: "0px" }} mt="5px">Apply in less than a minute</Box>
+            <Box fontSize="1rem" px={{ sm:"5px", md: "0px" }} mt="5px">Apply in less than a minute</Box>
           </Box>
         </Container>
       </Box>
