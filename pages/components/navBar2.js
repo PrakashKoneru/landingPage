@@ -56,7 +56,6 @@ export default function Simple() {
 				maxHeight="100vh"
 			>
         <Flex
-					h="9vh"
 					maxHeight="90px"
 					alignItems={'center'}
 					justifyContent={{
@@ -65,9 +64,10 @@ export default function Simple() {
 					}}
 					position="relative"
 					px={{
-						sm: 4,
-						md: 12
+						sm: "25px",
+						md: "48px"
 					}}
+					minHeight="80px"
 				>
           <IconButton
 						size={'xs'}
@@ -84,6 +84,7 @@ export default function Simple() {
 							onOpen()
 						}}
 						position="absolute"
+						left="13px"
           />
           <HStack
 						spacing={8}
