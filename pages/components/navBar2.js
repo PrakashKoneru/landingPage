@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import {
   Box,
   Flex,
@@ -8,7 +9,8 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import {Link as NextLink} from 'next';
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 const NavLink = ({ children }) => (
   <Link
@@ -25,9 +27,20 @@ const NavLink = ({ children }) => (
 );
 
 export default function Simple() {
+	const [disableScroll, setScroll] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
 	const { pathname } = useRouter();
 	const borderBottom='#19858F'
+	const targetRef = React.createRef();
+	
+	useEffect(() => {
+		if(disableScroll) {
+			let targetElement = targetRef.current;
+			disableBodyScroll(targetElement);
+		} else {
+			clearAllBodyScrollLocks();
+		}
+	}, [isOpen])
   return (
     <>
       <Box
@@ -39,6 +52,8 @@ export default function Simple() {
 				background="white"
 				borderBottom="1px solid #BFBFBF"
 				color="#495FBF"
+				overflowY="hidden"
+				maxHeight="100vh"
 			>
         <Flex
 					h="9vh"
@@ -61,7 +76,13 @@ export default function Simple() {
             icon={isOpen ? <CloseIcon height="17px" width="17px" /> : <HamburgerIcon height="25px" width="25px"/>}
             aria-label={'Open Menu'}
             display={{ md: !isOpen ? 'none' : 'inherit' }}
-						onClick={isOpen ? onClose : onOpen}
+						onClick={isOpen ? () => {
+							setScroll(false)
+							onClose()
+						} : () => {
+							setScroll(true)
+							onOpen()
+						}}
 						position="absolute"
           />
           <HStack
@@ -150,6 +171,9 @@ export default function Simple() {
 						zIndex="10"
 						bg="#DBF6F8"
 						color="#495FBF"
+						overflowY="hidden"
+						maxHeight="100vh"
+						ref={targetRef}
 					>
 						<Flex
 							display="flex"
