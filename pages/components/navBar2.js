@@ -115,6 +115,7 @@ export default function Simple() {
 						>
 							<Link
 								as={NextLink}
+								maxHeight="90px"
 								variant="navLink"
 								href='/'
 								mr="5px"
@@ -129,6 +130,7 @@ export default function Simple() {
 								href='/investors'
 								as={NextLink}
 								variant="navLink"
+								maxHeight="90px"
 								h="100%"
 								bg={pathname === '/investors' ? 'white' : ''}
 								boxShadow={pathname === '/investors' ? '2px 2px 10px rgba(0, 0, 0, 0.5)' : ''}
