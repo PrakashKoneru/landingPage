@@ -52,31 +52,13 @@ function Navbar({ ...props }) {
               Borrowers
             </Link>
             <Link
-              href='/aboutUs'
-              as={NextLink}
-              variant="navLink"
-              h="100%"
-              borderBottom={pathname === '/aboutUs' ? `5px solid ${borderBottom}` : ''}
-            >
-              About Us
-            </Link>
-            <Link
               href='/investors'
               as={NextLink}
               variant="navLink"
               h="100%"
               borderBottom={pathname === '/investors' ? `5px solid ${borderBottom}` : ''}
             >
-              Lenders
-            </Link>
-            <Link
-              as={NextLink}
-              href='/partnerships'
-              variant="navLink"
-              h="100%"
-              borderBottom={pathname === '/partnerships' ? `5px solid ${borderBottom}` : ''}
-            >
-              Partnerships
+              Lending Partners
             </Link>
           </Flex>
         </Flex>
