@@ -68,6 +68,8 @@ export default function Simple() {
 						md: "48px"
 					}}
 					minHeight="80px"
+					maxWidth="1300px"
+					margin="auto"
 				>
           <IconButton
 						size={'xs'}
