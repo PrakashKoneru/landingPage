@@ -64,8 +64,8 @@ export default function Home() {
             width={{ lg: "50%", sm: "100%" }}
             display="flex"
             flexDirection="column"
-						// alignItems={{ md: "center", sm: "flex-start" }}
-						alignItems="center"
+						alignItems={{ md: "center", sm: "flex-start" }}
+						// alignItems="center"
             justifyContent="flex-start"
             minHeight="150px"
 						// mt={{ lg: "0px", sm: "30px" }}
@@ -94,8 +94,8 @@ export default function Home() {
             display="flex"
             flexDirection="column"
             justifyContent="flex-start"
-						// alignItems={{ md: "center", sm: "flex-start"}}
-						alignItems="center"
+						alignItems={{ md: "center", sm: "flex-start"}}
+						// alignItems="center"
             mt={{ sm: "30px", lg: "0px" }}
           >
             <Box fontSize={{ md: '2.5rem', sm: '40px' }}>Faster... Simpler... Safer.</Box>
@@ -109,9 +109,11 @@ export default function Home() {
 						key={index}
 						py="80px"
 						color='black'
-						background={index % 2 === 0 ? 'white' : '#EDE9E5'}
+						background={index % 2 === 0 ? 'white' : '#DBF6F8'}
 						// height={index === 0 || index === 1 ? "calc(50vh - 62.5px)" : "50vh"}
 						height="50vh"
+						minHeight="250px"
+						px={{ sm: "15px", lg: "0px" }}
 					>
 						<Container
 							display="flex"
@@ -143,7 +145,12 @@ export default function Home() {
 					</Flex>
 				)
 			})}
-      <Box height="225px" background='#EDE9E5'>
+			<Box
+				background='#DBF6F8'
+				h="50vh"
+				minHeight="250px"
+				px={{ sm: "10px", lg: "0px" }}
+			>
 				<Container
 					display="flex"
 					justifyContent="center"

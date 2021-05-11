@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Button, Input, Checkbox } from '@chakra-ui/react';
+import { Box, Button, Input, Checkbox, Flex } from '@chakra-ui/react';
 import { useForm } from "react-hook-form";
 // import styles from '../../styles/form.module.css'
 
@@ -28,14 +28,6 @@ export default ({ submissionSuccesful = () => {} }) => {
   return (
     <>
       <form onSubmit={handleSubmit(postData)}>
-        <div mt="15px">
-          <Input
-            placeholder="name"
-            {...register("name", { required: true })}
-            type='text' 
-          />
-          {errors.name && <p style={{ marginTop: '5px', color: 'red', fontWeight: '400' }}>Name is required</p>}
-        </div>
         <div>
           <Input
             placeholder="Email"
@@ -45,21 +37,26 @@ export default ({ submissionSuccesful = () => {} }) => {
           />
           {errors.email && <p style={{ marginTop: '5px', color: 'red', fontWeight: '400' }}>Please enter a valid email</p>}
         </div>
-        <div>
+        <Box mt="8px">
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <Checkbox
               name="checked"
+              borderColor="#495FBF"
               {...register("checked", { required: true })}
-              height="10px"
-              width="10px"
-            />
+              size="lg"
+              outlineColor="none"
+              ml="5px"
+            ></Checkbox>
             <label style={{marginLeft: '10px', fontSize:'14px'}}> I agree to receive future communications from Paisa. </label>
           </div>
           {errors.checked && <p style={{ marginTop: '9px', color: 'red', fontWeight: '400' }}>Please check the box to submit.</p>}
-        </div>
-        <div>
+        </Box>
+        <Flex
+          mt="10px"
+          justifyContent="flex-end"
+        >
           <Button color="white" type="submit">Keep me posted</Button>
-        </div>
+        </Flex>
       </form>
     </>
   )

@@ -93,7 +93,7 @@ export default function Simple() {
 							md: 'flex-start'
 						}}
 						width={{
-							sm: "calc(100% - 35px)",
+							sm: "calc(100% - 22px)",
 							base: "auto"
 						}}
 					>

@@ -4,13 +4,16 @@ import EmailCollection from './emailCollection'
 
 const Footer = () => {
   return (
-    <Box height="250px">
+    <Box>
       <Container
         display="flex"
         flexDirection="column"
         justifyContent="center"
         alignItems="center"
-        height="100%"
+        h="50vh"
+				minHeight="250px"
+				px={{ sm: "25px", lg: "0px" }}
+        py={{ sm: "50px", lg: "0px" }}
       >
         <Box fontSize="2.5rem">
           Want to know more?
