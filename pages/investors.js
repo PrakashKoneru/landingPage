@@ -11,21 +11,31 @@ const Investors = () => {
 				color='#DBF6F8'
 			>
 				<Container
-					h={'50vh'}
+					minHeight={'50vh'}
 					display='flex'
-					alignItems={{
-						lg: 'center',
-						sm: 'flex-start'
-					}}
+					// alignItems={{
+					// 	lg: 'center',
+					// 	sm: 'flex-start'
+          // }}
+          alignItems="center"
 					justifyContent="center"
-					flexDirection="column"
+          flexDirection="column"
+          px={{
+						sm: "25px"
+					}}
+					py={{ sm: "125px", md: "none" }}
 				>
 						
           <Flex
             position="absolute"
             top="135px"
-            width="250px"
+            width={{
+              md: "250px",
+              sm: "70%"
+            }}
             justifyContent="space-between"
+            margin="auto"
+            px="25px"
           >
             <Box
               cursor="pointer"
@@ -46,20 +56,21 @@ const Investors = () => {
           </Flex>
           {activeTab === 'Big Banks' && (
             <Box
-              fontSize="56px"
+              fontSize={{ md:"56px", sm: "40px" }}
+              whiteSpace="nowrap"
             >
               Lending done right.
             </Box>
           )}
           {activeTab === 'Small Banks' && (
-            <Box fontSize="56px">
+            <Box fontSize={{ md:"56px", sm: "40px" }} textAlign="center">
               New and Safe Investment Class
             </Box>
           )}
 				</Container>
 			</Box>
       {activeTab === 'Big Banks' && (
-        <Box bg="#EDE9E5">
+        <Box bg="#DBF6F8">
           <Container
             display="flex"
             justifyContent="center"
@@ -67,22 +78,30 @@ const Investors = () => {
             flexDirection={{
               sm: 'column'
             }}
-            height="42vh"
-            whiteSpace="nowrap"
+            minHeight="50vh"
+            px={{
+              sm: "25px"
+            }}
+            py={{ sm: "50px", md: "none" }}
+            // whiteSpace="nowrap"
           >
             <Box
-              width={{ lg: "50%", sm: "100%" }}
+              // width={{ lg: "50%", sm: "100%" }}
               display="flex"
               flexDirection="column"
               alignItems="center"
               justifyContent="flex-start"
               // mt={{ lg: "0px", sm: "30px" }}
             >
-              <Box fontSize="2.5rem">Social Financing with Commercial Returns</Box>
+              <Box
+                fontSize="2.5rem"
+              >
+                Social Financing with Commercial Returns
+              </Box>
             </Box>
             <Box
               mt="50px"
-              width={{ lg: "50%", sm: "100%" }}
+              // width={{ lg: "50%", sm: "100%" }}
               display="flex"
               flexDirection="column"
               justifyContent="flex-start"
@@ -95,11 +114,14 @@ const Investors = () => {
           {primaryInvestorContent.map((content, index) => {
             return (
               <Flex
+                key={index}
                 py="80px"
                 color='black'
-                background={index % 2 === 0 ? 'white' : '#EDE9E5'}
+                background={index % 2 === 0 ? 'white' : '#DBF6F8'}
                 // height={index === 0 || index === 1 ? "calc(50vh - 62.5px)" : "50vh"}
                 height="50vh"
+                minHeight="250px"
+                px={{ sm: "15px", lg: "0px" }}
               >
                 <Container
                   display="flex"
@@ -134,7 +156,7 @@ const Investors = () => {
         </Box>
       )}
       {activeTab === 'Small Banks' && (
-        <Box bg="#EDE9E5">
+        <Box bg="#DBF6F8">
           <Container
             display="flex"
             justifyContent="center"
@@ -142,14 +164,18 @@ const Investors = () => {
             flexDirection={{
               sm: 'column'
             }}
-            height="42vh"
-            whiteSpace="nowrap"
+            minHeight="50vh"
+            px={{
+              sm: "25px"
+            }}
+            py={{ sm: "50px", md: "none" }}
+            // whiteSpace="nowrap"
           >
             <Box
-              width={{ lg: "50%", sm: "100%" }}
+              // width={{ lg: "50%", sm: "100%" }}
               display="flex"
               flexDirection="column"
-              alignItems="center"
+              // alignItems="center"
               justifyContent="flex-start"
               // mt={{ lg: "0px", sm: "30px" }}
             >
@@ -157,7 +183,7 @@ const Investors = () => {
             </Box>
             <Box
               mt="50px"
-              width={{ lg: "50%", sm: "100%" }}
+              // width={{ lg: "50%", sm: "100%" }}
               display="flex"
               flexDirection="column"
               justifyContent="flex-start"
@@ -170,11 +196,14 @@ const Investors = () => {
           {secondaryInvestorContent.map((content, index) => {
             return (
               <Flex
+                key={index}
                 py="80px"
                 color='black'
-                background={index % 2 === 0 ? 'white' : '#EDE9E5'}
+                background={index % 2 === 0 ? 'white' : '#DBF6F8'}
                 // height={index === 0 || index === 1 ? "calc(50vh - 62.5px)" : "50vh"}
                 height="50vh"
+                minHeight="250px"
+                px={{ sm: "15px", lg: "0px" }}
               >
                 <Container
                   display="flex"

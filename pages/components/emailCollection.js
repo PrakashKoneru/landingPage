@@ -9,14 +9,18 @@ function validateEmail(email) {
   return re.test(String(email).toLowerCase());
 }
 
-const emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+const emailPattern = /^ *([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,6}) *$/;
 
 
 export default ({ setFormSubmitted = () => {} }) => {
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
   const postData = async (data) => {
+    const apiData = {
+      ...data,
+      email: data.email.trim()
+    }
     try {
-      const post = await axios.post('/api', data);
+      const post = await axios.post('/api', apiData);
       setFormSubmitted(true)
     } catch(error) {
       // setFormSubmitted(true)

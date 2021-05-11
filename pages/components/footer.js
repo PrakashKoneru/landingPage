@@ -2,12 +2,16 @@ import React, { useState } from 'react';
 import { Box, Container, Flex, IconButton } from '@chakra-ui/react';
 import EmailCollection from './emailCollection';
 import { CheckIcon } from '@chakra-ui/icons';
+import { useRouter } from 'next/router'
 
 const Footer = () => {
+  const { pathname } = useRouter();
   const [formSubmitted, setFormSubmitted] = useState(false);
 
   return (
-    <Box>
+    <Box
+      bg={pathname === '/investors' ? "#DBF6F8" : 'white'}
+    >
       <Container
         display="flex"
         flexDirection="column"
