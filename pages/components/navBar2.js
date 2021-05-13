@@ -74,7 +74,7 @@ export default function Simple() {
           <IconButton
 						size={'xs'}
 						bg="none"
-						color="#495FBF"
+						color="#9AA5D9"
             icon={isOpen ? <CloseIcon height="17px" width="17px" /> : <HamburgerIcon height="25px" width="25px"/>}
             aria-label={'Open Menu'}
             display={{ md: !isOpen ? 'none' : 'inherit' }}

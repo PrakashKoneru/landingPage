@@ -1,6 +1,7 @@
-import { Box, Flex, Container } from '@chakra-ui/react';
+import { Box, Flex, Container, IconButton } from '@chakra-ui/react';
 import LandingLayout from './components/landingLayout';
 import { borrowersContent } from '../content/content';
+import LowInterestChallenge from '../public/landingPageIllustrations/lowInterestChallenge.svg'
 
 export default function Home() {
   return (
@@ -43,7 +44,10 @@ export default function Home() {
 				</Container>
 			</Box>
       <Box
+				display="flex"
+				alignItems="center"
 				bg="#DBF6F8"
+				height="100%"
 			>
         <Container
 					display="flex"
@@ -56,7 +60,7 @@ export default function Home() {
 					px={{
 						sm: "25px"
 					}}
-					py={{ sm: "50px", md: "none" }}
+					py={{ sm: "80px", md: "80px", lg: "none" }}
 					minHeight="50vh"
 					flexWrap="wrap"
         >
@@ -68,8 +72,19 @@ export default function Home() {
 						// alignItems="center"
             justifyContent="flex-start"
             minHeight="150px"
-						// mt={{ lg: "0px", sm: "30px" }}
+						mt={{ lg: "-25px", sm: "0px" }}
           >
+						<Box
+							display="flex"
+							width="100%"
+							justifyContent="center"
+							height="200px"
+							width="250px"
+							margin={{ sm: "0 0 0 24px", lg: "0 0 0 -48px", md: "0 0 0 -27px" }}
+							// marginLeft={{ lg: "-48px", sm: "0px"}}
+						>
+							<img src="/landingPageIllustrations/lowInterestChallenge.svg" />
+						</Box>
             <Box fontSize={{ md: '2.5rem', sm: '40px' }}>Lowest Interest Challenge</Box>
             <Box
 							// fontSize={{ md: '1.5rem', sm: '18px' }}
@@ -96,8 +111,20 @@ export default function Home() {
             justifyContent="flex-start"
 						alignItems={{ md: "center", sm: "flex-start"}}
 						// alignItems="center"
-            mt={{ sm: "30px", lg: "0px" }}
+						mt={{ lg: "-44px", sm: "85px" }}
           >
+						<Box
+							display="flex"
+							width="100%"
+							justifyContent="center"
+							height="200px"
+							width="250px"
+							margin={{ sm: "0 0 0 22px", lg: "0 0 0 -48px", md: "0 0 0 -27px" }}
+							// marginLeft={{ lg: "-48px", sm: "0px"}}
+							pt={{ md: "20px", sm: "0px"}}
+						>
+							<img src="/landingPageIllustrations/fasterSimpler.svg" />
+						</Box>
             <Box fontSize={{ md: '2.5rem', sm: '40px' }}>Faster... Simpler... Safer.</Box>
             <Box fontSize="1rem" px={{ sm:"5px", md: "0px" }} mt="5px">Apply in less than a minute</Box>
           </Box>
