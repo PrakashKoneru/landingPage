@@ -20,7 +20,9 @@ export default function Home() {
 					justifyContent="center"
 					flexDirection="column"
 					px={{
-						sm: "25px"
+						sm: "25px",
+						md: "75px",
+						lg: "25px"
 					}}
 					py={{ sm: "50px", md: "none" }}
 				>
@@ -37,7 +39,7 @@ export default function Home() {
 							md:"56px",
 							sm: "40px"
 						}}
-						mt={{ sm: "40px", md: "0px" }}
+						mt={{ sm: "40px", md: "70px", lg: "0px" }}
 					>
 						Know who is on your side.
 					</Box>
@@ -111,7 +113,7 @@ export default function Home() {
             justifyContent="flex-start"
 						alignItems={{ md: "center", sm: "flex-start"}}
 						// alignItems="center"
-						mt={{ lg: "-44px", sm: "85px" }}
+						mt={{ lg: "-44px", sm: "110px" }}
           >
 						<Box
 							display="flex"
@@ -134,38 +136,61 @@ export default function Home() {
 				return (
 					<Flex
 						key={index}
-						py="80px"
+						py="100px"
 						color='black'
 						background={index % 2 === 0 ? 'white' : '#DBF6F8'}
 						// height={index === 0 || index === 1 ? "calc(50vh - 62.5px)" : "50vh"}
-						height="50vh"
-						minHeight="250px"
+						minHeight={{ lg: "50vh", sm: "50vh", md: "350px"}}
+						// minHeight="350px"
 						px={{ sm: "15px", lg: "0px" }}
 					>
 						<Container
 							display="flex"
 							flexDirection={{
 								lg: index % 2 === 0 ? 'row': 'row-reverse',
-								sm: 'column'
+								md: 'column-reverse',
+								sm: 'column-reverse'
 							}}
+							alignItems="center"
 						>
 							<Box
-                w={{ lg: "10%", sm: "0%" }}
+                w={{ lg: "10%", md: "0%", sm: "0%" }}
               >
 
               </Box>
 							<Box
-                w={{ lg: "40%", sm: "100%" }}
-                margin="auto"
+                w={{ lg: "40%", md:"100%", sm: "100%" }}
+								// margin="auto"
+								mt={{ sm: "20px", md:"20px", lg: "0px"}}
+								alignItems={{sm:"none", md: "center", lg: "center" }}
+								display="flex"
+								flexDirection="column"
+								justifyContent="center"
               >
 								<Box fontSize="2.5rem">{content.heading}</Box>
-								<Box fontSize="2.5rem">{content.headingLine2}</Box>
-								<Box w="300px">{content.desc}</Box>
+								<Box
+									fontSize="2.5rem"
+								>
+									{content.headingLine2}
+								</Box>
+								<Box>{content.desc}</Box>
 							</Box>
 							<Box
-                w={{ lg: "40%", sm: "100%" }}
+								w={{ lg: "40%", md: "250px", sm: "250px" }}
+								h="200px"
+								margin="auto"
               >
-								<img src={content.img}></img>
+								<Box
+									m={{ sm: "0 0 0 -10px", md: '', lg: 'auto' }}
+									w={{ sm: "100%", md: "250px", lg: "350px"}}
+									height="250px"
+									display="flex"
+									alignItems="center"
+								>
+									<Box mt="-65px">
+										<img src={content.img}></img>
+									</Box>
+								</Box>
 							</Box>
 							<Box w="10%"></Box>
 						</Container>
@@ -174,9 +199,9 @@ export default function Home() {
 			})}
 			<Box
 				background='#DBF6F8'
-				h="50vh"
 				minHeight="250px"
 				px={{ sm: "10px", lg: "0px" }}
+				py="80px"
 			>
 				<Container
 					display="flex"
@@ -184,8 +209,23 @@ export default function Home() {
 					alignItems="center"
 					fontSize="2.5rem"
 					height="100%"
+					flexDirection="column"
 				>
-					We are with you until the end. We Promise.
+					<Box
+						display="flex"
+						width="100%"
+						justifyContent="center"
+						height="200px"
+						width="250px"
+						margin={{ sm: "0 0 0 -31px", lg: "0 0 0 -48px", md: "0 0 0 -31px" }}
+						// marginLeft={{ lg: "-48px", sm: "0px"}}
+						pt={{ md: "20px", sm: "0px"}}
+					>
+						<img src="/landingPageIllustrations/withYouTillEnd.svg" />
+					</Box>
+					<Box mt="25px">
+						We are with you until the end. We Promise.
+					</Box>
 				</Container>
 			</Box>
 		</>

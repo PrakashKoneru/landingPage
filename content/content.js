@@ -71,19 +71,19 @@ const borrowersContent = [
 	{
 			heading: 'Student Loans?',
 			desc: 'Stop worrying about the debt. Focus on buiding a career',
-			img: '',
+			img: '/landingPageIllustrations/careerFocus.svg',
 			bg: 'white'
 	},
 	{
 			heading: 'Credit Card Debt?',
 			desc: 'Say NO to ridiculous APRs. Have a plan, clear off the debt',
-			img: '',
+			img: '/landingPageIllustrations/clearOffDebtChillSofa.svg',
 			bg: 'white'
 	},
 	{
 			heading: 'Home Renovation?',
 			desc: `Don’t think about the loan Focus on your design and many more`,
-			img: '',
+			img: '/landingPageIllustrations/focusOnHouseConstruction.svg',
 			bg: 'primary'
 	}
 ]
