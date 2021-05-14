@@ -11,7 +11,7 @@ export default function Home() {
 				color='#EDE9E5'
 			>
 				<Container
-					minHeight={'50vh'}
+					minHeight='50vh'
 					display='flex'
 					alignItems={{
 						lg: 'center',
@@ -67,7 +67,7 @@ export default function Home() {
 					flexWrap="wrap"
         >
           <Box
-            width={{ lg: "50%", sm: "100%" }}
+						width={{ lg: "50%", sm: "100%" }}
             display="flex"
             flexDirection="column"
 						alignItems={{ md: "center", sm: "flex-start" }}
@@ -82,17 +82,25 @@ export default function Home() {
 							justifyContent="center"
 							height="200px"
 							width="250px"
-							margin={{ sm: "0 0 0 24px", lg: "0 0 0 -48px", md: "0 0 0 -27px" }}
-							// marginLeft={{ lg: "-48px", sm: "0px"}}
+							margin={{ sm: "0 0 0 39px", lg: "0 0 0 -32px", md: "0 0 0 -27px" }}
+							// marginLeft={{ lg: "-32px", sm: "0px"}}
 						>
 							<img src="/landingPageIllustrations/lowInterestChallenge.svg" />
 						</Box>
-            <Box fontSize={{ md: '2.5rem', sm: '40px' }}>Lowest Interest Challenge</Box>
+            <Box
+							fontSize={{ md: '2.5rem', sm: '40px' }}
+							width={{ sm: "85%", md: "100%", lg: "auto" }}
+							marginX="auto"
+						>
+							Lowest Interest Challenge
+						</Box>
             <Box
 							// fontSize={{ md: '1.5rem', sm: '18px' }}
 							fontSize="1.5rem"
 							px={{ sm:"5px", md: "0px" }}
 							mt="8px"
+							width={{ sm: "85%", md: "100%", lg: "auto" }}
+							marginX="auto"
 						>
 							Check your rate for free.
 						</Box>
@@ -101,6 +109,8 @@ export default function Home() {
 							fontSize="1rem"
 							px={{ sm:"5px", md: "0px" }}
 							mt="8px"
+							width={{ sm: "85%", md: "100%", lg: "auto" }}
+							marginX="auto"
 						>
 							Get pre-approval without hurting your credit.
 						</Box>
@@ -121,14 +131,28 @@ export default function Home() {
 							justifyContent="center"
 							height="200px"
 							width="250px"
-							margin={{ sm: "0 0 0 22px", lg: "0 0 0 -48px", md: "0 0 0 -27px" }}
-							// marginLeft={{ lg: "-48px", sm: "0px"}}
+							margin={{ sm: "0 0 0 39px", lg: "0 0 0 -48px", md: "0 0 0 -27px" }}
+							// marginLeft={{ lg: "-32px", sm: "0px"}}
 							pt={{ md: "20px", sm: "0px"}}
 						>
 							<img src="/landingPageIllustrations/fasterSimpler.svg" />
 						</Box>
-            <Box fontSize={{ md: '2.5rem', sm: '40px' }}>Faster... Simpler... Safer.</Box>
-            <Box fontSize="1rem" px={{ sm:"5px", md: "0px" }} mt="5px">Apply in less than a minute</Box>
+            <Box
+							fontSize={{ md: '2.5rem', sm: '40px' }}
+							width={{ sm: "85%", md: "100%", lg: "auto" }}
+							marginX="auto"
+						>
+							Faster... Simpler... Safer.
+						</Box>
+            <Box
+							fontSize="1rem"
+							px={{ sm:"5px", md: "0px" }}
+							mt="5px"
+							width={{ sm: "85%", md: "100%", lg: "auto" }}
+							marginX="auto"
+						>
+							Apply in less than a minute
+						</Box>
           </Box>
         </Container>
       </Box>
@@ -159,15 +183,16 @@ export default function Home() {
 
               </Box>
 							<Box
-                w={{ lg: "40%", md:"100%", sm: "100%" }}
+								w={{ lg: "40%", md:"100%", sm: "auto" }}
+								marginX="auto"
 								// margin="auto"
 								mt={{ sm: "20px", md:"20px", lg: "0px"}}
 								alignItems={{sm:"none", md: "center", lg: "center" }}
-								display="flex"
-								flexDirection="column"
-								justifyContent="center"
+								display="inline-block"
+								// flexDirection="column"
+								// justifyContent="center"
               >
-								<Box fontSize="2.5rem">{content.heading}</Box>
+								<Box fontSize="2.5rem" whiteSpace={{ sm: "nowrap", md: "wrap" }}>{content.heading}</Box>
 								<Box
 									fontSize="2.5rem"
 								>

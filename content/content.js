@@ -2,17 +2,17 @@ const primaryInvestorContent = [
 	{
 			heading: '20-40% higher Returns',
 			desc: 'through Risk Sharing techniques',
-			img: '',
+			img: '/landingPageIllustrations/higherReturns.svg',
 	},
 	{
 			heading: 'Man and Machine powered',
 			desc: 'Time varied Risk Management',
-			img: '',
+			img: '/landingPageIllustrations/manAndMachine.svg',
 	},
 	{
-			heading: 'High Liquidity',
+			heading: 'Higher Liquidity',
 			desc: 'upto 50% lower holding period',
-			img: ''
+			img: '/landingPageIllustrations/highLiquidity.svg',
 	},
 ]
 
@@ -30,7 +30,7 @@ const secondaryInvestorContent = [
 			bg: 'white'
 	},
 	{
-			heading: 'High Liquidity',
+			heading: 'Higher Liquidity',
 			desc: 'upto 50% lower holding period',
 			img: '',
 			bg: 'primary'

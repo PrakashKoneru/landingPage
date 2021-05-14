@@ -2,7 +2,7 @@ const Container = {
   baseStyle: {
     margin: 'auto',
     maxW: {
-      lg:'1380px',
+      lg:'1300px',
       sm:'none'
     },
     w: '100%'

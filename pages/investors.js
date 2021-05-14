@@ -23,19 +23,20 @@ const Investors = () => {
           px={{
 						sm: "25px"
 					}}
-					py={{ sm: "125px", md: "none" }}
+          py={{ sm: "125px", md: "none" }}
 				>
 						
           <Flex
             position="absolute"
             top="135px"
             width={{
-              md: "250px",
+              md: "275px",
               sm: "70%"
             }}
             justifyContent="space-between"
-            margin="auto"
+            mx="auto"
             px="25px"
+            mt="40px"
           >
             <Box
               cursor="pointer"
@@ -76,17 +77,18 @@ const Investors = () => {
             justifyContent="center"
             alignItems="center"
             flexDirection={{
-              sm: 'column'
+              sm: 'column',
+              lg: "row"
             }}
             minHeight="50vh"
             px={{
               sm: "25px"
             }}
-            py={{ sm: "50px", md: "none" }}
+            py={{ sm: "80px", md: "none" }}
             // whiteSpace="nowrap"
           >
             <Box
-              // width={{ lg: "50%", sm: "100%" }}
+              width={{ lg: "50%", sm: "100%" }}
               display="flex"
               flexDirection="column"
               alignItems="center"
@@ -94,21 +96,45 @@ const Investors = () => {
               // mt={{ lg: "0px", sm: "30px" }}
             >
               <Box
+                display="flex"
+                width="100%"
+                justifyContent="center"
+                height="200px"
+                width="250px"
+                margin={{ sm: "0 0 0 -25px", lg: "0 0 0 -48px", md: "0 0 0 -27px" }}
+                // marginLeft={{ lg: "-48px", sm: "0px"}}
+              >
+                <img src="/landingPageIllustrations/socialFinanceCommercialReturn.svg" />
+              </Box>
+              <Box
                 fontSize="2.5rem"
+                maxWidth={{ lg: '450px', md: "100%" }}
               >
                 Social Financing with Commercial Returns
               </Box>
             </Box>
             <Box
-              mt="50px"
-              // width={{ lg: "50%", sm: "100%" }}
+              mt={{ sm: "50px", lg: "0px" }}
+              width={{ lg: "50%", sm: "100%" }}
               display="flex"
               flexDirection="column"
               justifyContent="flex-start"
               alignItems="center"
               // mt={{ sm: "30px", lg: "0px" }}
             >
-              <Box fontSize="2.5rem">Lending through Sharing - First of its kind</Box>
+              <Box
+                display="flex"
+                width="100%"
+                justifyContent="center"
+                height="200px"
+                width="250px"
+                margin={{ sm: "50px 0 0 -25px", lg: "0 0 0 -48px", md: "0 0 0 -27px" }}
+                // marginLeft={{ lg: "-48px", sm: "0px"}}
+                // pt={{ lg: "20px", md: "0px" }}
+              >
+                <img src="/landingPageIllustrations/lendingThroughSharing.svg" />
+              </Box>
+              <Box fontSize="2.5rem" maxWidth={{ lg: '450px', md: "100%" }}>Lending through Sharing - First of its kind</Box>
             </Box>
           </Container>
           {primaryInvestorContent.map((content, index) => {
@@ -119,32 +145,51 @@ const Investors = () => {
                 color='black'
                 background={index % 2 === 0 ? 'white' : '#DBF6F8'}
                 // height={index === 0 || index === 1 ? "calc(50vh - 62.5px)" : "50vh"}
-                height="50vh"
-                minHeight="250px"
+                minHeight="50vh"
                 px={{ sm: "15px", lg: "0px" }}
               >
                 <Container
                   display="flex"
                   flexDirection={{
                     lg: index % 2 === 0 ? 'row': 'row-reverse',
-                    sm: 'column'
+                    sm: 'column-reverse'
                   }}
+                  alignItems={{ md: "center", sm: "none" }}
                 >
                   <Box
                     w={{ lg: "10%", sm: "0%" }}
                   >
 
                   </Box>
-                  <Box
-                    w={{ lg: "40%", sm: "100%" }}
-                    margin="auto"
+                  {/* <Box
+                    w={{ lg: "40%", sm: "87%" }}
+                    mt={{ sm: "20px", md:"20px", lg: "0px"}}
+                    mx="auto"
                   >
                     <Box fontSize="2.5rem">{content.heading}</Box>
                     <Box fontSize="2.5rem">{content.headingLine2}</Box>
                     <Box w="300px">{content.desc}</Box>
+                  </Box> */}
+                  <Box
+                    mx="auto"
+                    w={{ lg: "40%", md:"100%", sm: "87%" }}
+                  // margin="auto"
+                    mt={{ sm: "20px", md:"20px", lg: "0px"}}
+                    alignItems={{sm:"none", md: "center", lg: "center" }}
+                    textAlign={{ lg: "none", md: "center" }}
+                  >
+                    <Box fontSize="2.5rem">{content.heading}</Box>
+                    <Box fontSize="2.5rem">{content.headingLine2}</Box>
+                    <Box w={{ lg: "300px", md: "100%" }}>{content.desc}</Box>
                   </Box>
                   <Box
-                    w={{ lg: "40%", sm: "100%" }}
+                    display="flex"
+                    width="100%"
+                    justifyContent="center"
+                    height="200px"
+                    width="250px"
+                    margin={{ sm: "0 0 0 35px", lg: "0 0 0 -48px", md: "0 0 0 -27px" }}
+                    // w={{ lg: "40%", sm: "100%" }}
                   >
                     <img src={content.img}></img>
                   </Box>
