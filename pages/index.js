@@ -113,7 +113,7 @@ export default function Home() {
             justifyContent="flex-start"
 						alignItems={{ md: "center", sm: "flex-start"}}
 						// alignItems="center"
-						mt={{ lg: "-44px", sm: "110px" }}
+						mt={{ lg: "-73px", sm: "110px" }}
           >
 						<Box
 							display="flex"
