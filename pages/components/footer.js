@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Container, Flex } from '@chakra-ui/react';
 import EmailCollection from './emailCollection';
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
 
 const Footer = () => {
   const { pathname } = useRouter();
@@ -18,7 +18,6 @@ const Footer = () => {
         alignItems="center"
         minHeight="500px"
 				px={{ sm: "25px", lg: "0px" }}
-        // py={{ sm: "15px", lg: "0px" }}
       >
         {formSubmitted ? (
             <Flex
