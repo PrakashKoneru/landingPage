@@ -10,6 +10,7 @@ import Simple from './components/navBar2';
 const themeHelper = extendTheme({ ...theme })
 
 function MyApp({ Component, pageProps }) {
+  console.log('called landing page');
   return (
     <>
       <Head>
