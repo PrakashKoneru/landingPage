@@ -6,18 +6,17 @@ const client = new faunadb.Client({ secret });
 
 module.exports = async (req, res) => {
   try {
-    const saveEmail = await client.query(
-        q.Create(
-            q.Collection('emails'),
-            { data: {
-              email: req.body.email,
-              name: req.body.name
-            }},
-        )
-    )
+    // const saveEmail = await client.query(
+    //     q.Create(
+    //         q.Collection('emails'),
+    //         { data: {
+    //           email: req.body.email,
+    //           name: req.body.name
+    //         }},
+    //     )
+    // )
     res.status(200).json({result: 'sucesss'});
   } catch (e) {
-    // something went wrong
     res.status(500).json({ error: e.message });
   }
 }
