@@ -7,5 +7,5 @@ module.exports = {
   
       return config;
     },
-    assetPrefix: "/landingPage"
+    assetPrefix: process.env.NODE_ENV === 'production' ? '/landingPage' : ''
   };
