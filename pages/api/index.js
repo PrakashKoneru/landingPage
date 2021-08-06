@@ -6,6 +6,7 @@ const client = new faunadb.Client({ secret });
 
 module.exports = async (req, res) => {
   try {
+    console.log(secret);
     const saveEmail = await client.query(
         q.Create(
             q.Collection('emails'),
