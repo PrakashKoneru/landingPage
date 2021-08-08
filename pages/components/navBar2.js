@@ -65,7 +65,8 @@ export default function Simple() {
 					position="relative"
 					px={{
 						sm: "25px",
-						md: "48px"
+						md: "20px",
+						lg: "48px"
 					}}
 					minHeight="80px"
 					maxWidth="1300px"
@@ -163,6 +164,32 @@ export default function Simple() {
 							>
 								Lending Partners
 							</Link>
+							<Link
+								href='/borrowers'
+								as={NextLink}
+								variant="navLink"
+								maxHeight="90px"
+								h="100%"
+								bg={pathname === '/investors' ? 'white' : ''}
+								boxShadow={pathname === '/investors' ? '2px 2px 10px rgba(0, 0, 0, 0.5)' : ''}
+								borderRadius="5px"
+								// borderBottom={pathname === '/investors' ? `5px solid ${borderBottom}` : ''}
+							>
+								Log In
+							</Link>
+							<Link
+								href='/borrowers/onboarding'
+								as={NextLink}
+								variant="navLink"
+								maxHeight="90px"
+								h="100%"
+								bg={pathname === '/investors' ? 'white' : ''}
+								boxShadow={pathname === '/investors' ? '2px 2px 10px rgba(0, 0, 0, 0.5)' : ''}
+								borderRadius="5px"
+								// borderBottom={pathname === '/investors' ? `5px solid ${borderBottom}` : ''}
+							>
+								Sign Up
+							</Link>
 						</Flex>
 					</HStack>
         </Flex>
@@ -215,6 +242,31 @@ export default function Simple() {
 								borderBottom={pathname === '/investors' ? `0.5px solid #C3C9EB` : ''}
 							>
 								Lending Partners
+							</Link>
+							<Link
+								style={{
+									height: 'auto',
+									marginTop: '10px'
+								}}
+								as={NextLink}
+								key='/borrowers'
+								href='/borrowers'
+								variant="navLink"
+							>
+								Log In
+							</Link>
+							<Link
+								style={{
+									height: 'auto',
+									marginTop: '10px'
+								}}
+								as={NextLink}
+								key='/borrowers/onboarding'
+								href='/borrowers/onboarding'
+								variant="navLink"
+								h="100%"
+							>
+								Sign Up
 							</Link>
 						</Flex>
           </Box>
