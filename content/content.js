@@ -82,7 +82,7 @@ const borrowersContent = [
 	},
 	{
 			heading: 'Home Renovation?',
-			desc: `Don’t think about the loan Focus on your design and many more`,
+			desc: `Don’t think about the loan. Focus on your design and many more`,
 			img: '/landingPageIllustrations/focusOnHouseConstruction.svg',
 			bg: 'primary'
 	}

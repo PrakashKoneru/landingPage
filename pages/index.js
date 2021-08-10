@@ -91,6 +91,7 @@ export default function Home() {
 							fontSize={{ md: '2.5rem', sm: '40px' }}
 							width={{ sm: "85%", md: "100%", lg: "auto" }}
 							marginX="auto"
+							textAlign={{ md: "center", sm: "left"}}
 						>
 							Lowest Interest Challenge
 						</Box>
@@ -101,6 +102,7 @@ export default function Home() {
 							mt="8px"
 							width={{ sm: "85%", md: "100%", lg: "auto" }}
 							marginX="auto"
+							textAlign={{ md: "center", sm: "left"}}
 						>
 							Check your rate for free.
 						</Box>
@@ -111,6 +113,7 @@ export default function Home() {
 							mt="8px"
 							width={{ sm: "85%", md: "100%", lg: "auto" }}
 							marginX="auto"
+							textAlign={{ md: "center", sm: "left"}}
 						>
 							Get pre-approval without hurting your credit.
 						</Box>
@@ -141,6 +144,7 @@ export default function Home() {
 							fontSize={{ md: '2.5rem', sm: '40px' }}
 							width={{ sm: "85%", md: "100%", lg: "auto" }}
 							marginX="auto"
+							textAlign={{ md: "center", sm: "left"}}
 						>
 							Faster... Simpler... Safer.
 						</Box>
@@ -150,6 +154,7 @@ export default function Home() {
 							mt="5px"
 							width={{ sm: "85%", md: "100%", lg: "auto" }}
 							marginX="auto"
+							textAlign={{ md: "center", sm: "left"}}
 						>
 							Apply in less than a minute
 						</Box>
@@ -192,13 +197,24 @@ export default function Home() {
 								// flexDirection="column"
 								// justifyContent="center"
               >
-								<Box fontSize="2.5rem" whiteSpace={{ sm: "nowrap", md: "wrap" }}>{content.heading}</Box>
 								<Box
 									fontSize="2.5rem"
+									whiteSpace={{ sm: "nowrap", md: "wrap" }}
+									textAlign={{ md: "center", sm: "left"}}
+								>
+									{content.heading}
+								</Box>
+								<Box
+									fontSize="2.5rem"
+									textAlign={{ md: "center", sm: "left"}}
 								>
 									{content.headingLine2}
 								</Box>
-								<Box>{content.desc}</Box>
+								<Box
+									textAlign={{ md: "center", sm: "left"}}
+								>
+									{content.desc}
+								</Box>
 							</Box>
 							<Box
 								w={{ lg: "40%", md: "250px", sm: "250px" }}

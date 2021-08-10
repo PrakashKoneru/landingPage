@@ -170,8 +170,6 @@ export default function Simple() {
 								variant="navLink"
 								maxHeight="90px"
 								h="100%"
-								bg={pathname === '/investors' ? 'white' : ''}
-								boxShadow={pathname === '/investors' ? '2px 2px 10px rgba(0, 0, 0, 0.5)' : ''}
 								borderRadius="5px"
 								// borderBottom={pathname === '/investors' ? `5px solid ${borderBottom}` : ''}
 							>
@@ -183,8 +181,6 @@ export default function Simple() {
 								variant="navLink"
 								maxHeight="90px"
 								h="100%"
-								bg={pathname === '/investors' ? 'white' : ''}
-								boxShadow={pathname === '/investors' ? '2px 2px 10px rgba(0, 0, 0, 0.5)' : ''}
 								borderRadius="5px"
 								// borderBottom={pathname === '/investors' ? `5px solid ${borderBottom}` : ''}
 							>

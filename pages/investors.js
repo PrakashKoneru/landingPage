@@ -178,9 +178,25 @@ const Investors = () => {
                     alignItems={{sm:"none", md: "center", lg: "center" }}
                     textAlign={{ lg: "none", md: "center" }}
                   >
-                    <Box fontSize="2.5rem">{content.heading}</Box>
-                    <Box fontSize="2.5rem">{content.headingLine2}</Box>
-                    <Box w={{ lg: "300px", md: "100%" }}>{content.desc}</Box>
+                    <Box
+                      fontSize="2.5rem"
+                      whiteSpace={{ sm: "wrap", md: "wrap" }}
+                      textAlign={{ md: "center", sm: "center"}}
+                      maxWidth="100%"
+                    >
+                      {content.heading}
+                    </Box>
+                    <Box
+                      fontSize="2.5rem"
+                      textAlign={{ md: "center", sm: "center"}}
+                    >
+                      {content.headingLine2}
+                    </Box>
+                    <Box
+                      textAlign={{ md: "center", sm: "center"}}
+                    >
+                      {content.desc}
+                    </Box>
                   </Box>
                   <Box
                     display="flex"
