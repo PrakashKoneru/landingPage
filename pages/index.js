@@ -32,7 +32,7 @@ export default function Home() {
 							sm: "40px"
 						}}
 					>
-						Need more time to pay off your debts?
+						Borrow at ease
 					</Box>
 					<Box
 						fontSize={{
@@ -41,7 +41,7 @@ export default function Home() {
 						}}
 						mt={{ sm: "40px", md: "70px", lg: "0px" }}
 					>
-						Know who is on your side.
+						Lower Interest, Simpler Application
 					</Box>
 				</Container>
 			</Box>
@@ -54,7 +54,7 @@ export default function Home() {
         <Container
 					display="flex"
           alignItems={{
-						lg: 'center',
+						lg: 'baseline',
 						sm: 'flex-start'
 					}}
 					justifyContent={{ md: "center", sm: "flex-start" }}
@@ -70,11 +70,11 @@ export default function Home() {
 						width={{ lg: "50%", sm: "100%" }}
             display="flex"
             flexDirection="column"
-						alignItems={{ md: "center", sm: "flex-start" }}
-						// alignItems="center"
+						// alignItems={{ md: "center", sm: "flex-start" }}
+						alignItems="center"
             justifyContent="flex-start"
             minHeight="150px"
-						mt={{ lg: "-25px", sm: "0px" }}
+						mt={{ lg: "43px", sm: "0px" }}
           >
 						<Box
 							display="flex"
@@ -85,7 +85,7 @@ export default function Home() {
 							margin={{ sm: "0 0 0 39px", lg: "0 0 0 -32px", md: "0 0 0 -27px" }}
 							// marginLeft={{ lg: "-32px", sm: "0px"}}
 						>
-							<img src="/landingPageIllustrations/lowInterestChallenge.svg" />
+							<img src="/landingPageIllustrations/youAreNotJustNumber.svg" />
 						</Box>
             <Box
 							fontSize={{ md: '2.5rem', sm: '40px' }}
@@ -93,7 +93,7 @@ export default function Home() {
 							marginX="auto"
 							textAlign={{ md: "center", sm: "left"}}
 						>
-							Lowest Interest Challenge
+							You are not just a number to us
 						</Box>
             <Box
 							// fontSize={{ md: '1.5rem', sm: '18px' }}
@@ -104,9 +104,9 @@ export default function Home() {
 							marginX="auto"
 							textAlign={{ md: "center", sm: "left"}}
 						>
-							Check your rate for free.
+							We look at more than your credit history
 						</Box>
-            <Box
+            {/* <Box
 							// fontSize={{ md: '1rem', sm: '18px' }}
 							fontSize="1rem"
 							px={{ sm:"5px", md: "0px" }}
@@ -116,7 +116,7 @@ export default function Home() {
 							textAlign={{ md: "center", sm: "left"}}
 						>
 							Get pre-approval without hurting your credit.
-						</Box>
+						</Box> */}
           </Box>
           <Box
             minHeight="150px"
@@ -124,9 +124,9 @@ export default function Home() {
             display="flex"
             flexDirection="column"
             justifyContent="flex-start"
-						alignItems={{ md: "center", sm: "flex-start"}}
-						// alignItems="center"
-						mt={{ lg: "-73px", sm: "110px" }}
+						// alignItems={{ md: "center", sm: "flex-start"}}
+						alignItems="center"
+						mt={{ lg: "0px", sm: "110px" }}
           >
 						<Box
 							display="flex"
@@ -138,7 +138,7 @@ export default function Home() {
 							// marginLeft={{ lg: "-32px", sm: "0px"}}
 							pt={{ md: "20px", sm: "0px"}}
 						>
-							<img src="/landingPageIllustrations/fasterSimpler.svg" />
+							<img src="/landingPageIllustrations/lowInterestChallenge.svg" />
 						</Box>
             <Box
 							fontSize={{ md: '2.5rem', sm: '40px' }}
@@ -146,17 +146,17 @@ export default function Home() {
 							marginX="auto"
 							textAlign={{ md: "center", sm: "left"}}
 						>
-							Faster... Simpler... Safer.
+							Lowest interest in the industry.
 						</Box>
             <Box
-							fontSize="1rem"
+							fontSize="1.5rem"
 							px={{ sm:"5px", md: "0px" }}
-							mt="5px"
+							mt="8px"
 							width={{ sm: "85%", md: "100%", lg: "auto" }}
 							marginX="auto"
 							textAlign={{ md: "center", sm: "left"}}
 						>
-							Apply in less than a minute
+							If you get a lower interest elsewhere, we will beat it.
 						</Box>
           </Box>
         </Container>
@@ -192,7 +192,7 @@ export default function Home() {
 								marginX="auto"
 								// margin="auto"
 								mt={{ sm: "20px", md:"20px", lg: "0px"}}
-								alignItems={{sm:"none", md: "center", lg: "center" }}
+								alignItems={{sm:"center", md: "center", lg: "center" }}
 								display="inline-block"
 								// flexDirection="column"
 								// justifyContent="center"
@@ -200,18 +200,18 @@ export default function Home() {
 								<Box
 									fontSize="2.5rem"
 									whiteSpace={{ sm: "nowrap", md: "wrap" }}
-									textAlign={{ md: "center", sm: "left"}}
+									textAlign={{ md: "center", sm: "center"}}
 								>
 									{content.heading}
 								</Box>
 								<Box
 									fontSize="2.5rem"
-									textAlign={{ md: "center", sm: "left"}}
+									textAlign={{ md: "center", sm: "center"}}
 								>
 									{content.headingLine2}
 								</Box>
 								<Box
-									textAlign={{ md: "center", sm: "left"}}
+									textAlign={{ md: "center", sm: "center"}}
 								>
 									{content.desc}
 								</Box>
@@ -248,7 +248,8 @@ export default function Home() {
 					display="flex"
 					justifyContent="center"
 					alignItems="center"
-					fontSize="2.5rem"
+					textAlign="center"
+					fontSize={{ md: "2.5rem", sm: "2.25rem" }}
 					height="100%"
 					flexDirection="column"
 				>

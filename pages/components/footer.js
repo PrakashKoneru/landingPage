@@ -59,7 +59,10 @@ const Footer = () => {
               >
                 <img src="/landingPageIllustrations/wantToKnowMore.svg" />
               </Box>
-              <Box fontSize="2.5rem">
+              <Box
+								fontSize={{ md: "2.5rem", sm: "2.25rem" }}
+								textAlign="center"
+							>
                 Want to know more?
               </Box>
               <Box

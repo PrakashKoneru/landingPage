@@ -69,20 +69,20 @@ const aboutUsContent = [
 
 const borrowersContent = [
 	{
-			heading: 'Student Loans?',
-			desc: 'Stop worrying about the debt. Focus on buiding a career',
+			heading: 'Student Loans',
+			desc: 'Stop worrying about debt. Focus on your career.',
 			img: '/landingPageIllustrations/careerFocus.svg',
 			bg: 'white'
 	},
 	{
-			heading: 'Credit Card Debt?',
-			desc: 'Say NO to ridiculous APRs. Have a plan, clear off the debt',
+			heading: 'Credit Card Debt',
+			desc: 'Say NO to ridiculous APRs. Clear off the debt with a low interest loan.',
 			img: '/landingPageIllustrations/clearOffDebtChillSofa.svg',
 			bg: 'white'
 	},
 	{
-			heading: 'Home Renovation?',
-			desc: `Don’t think about the loan. Focus on your design and many more`,
+			heading: 'Home Renovation',
+			desc: `Design your dream home. Leave the expenses to us.`,
 			img: '/landingPageIllustrations/focusOnHouseConstruction.svg',
 			bg: 'primary'
 	}
