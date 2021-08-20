@@ -3,7 +3,7 @@ import { Flex, Container, Box } from "@chakra-ui/react"
 import { primaryInvestorContent, secondaryInvestorContent } from '../content/content';
 
 const Investors = () => {
-  const [activeTab, setActiveTab] = useState('Big Banks');
+  const [activeTab, setActiveTab] = useState('Large Institutions');
   return (
     <div>
       <Box
@@ -30,8 +30,8 @@ const Investors = () => {
             position="absolute"
             top="135px"
             width={{
-              md: "275px",
-              sm: "70%"
+              md: "300px",
+              sm: "80%"
             }}
             justifyContent="space-between"
             mx="auto"
@@ -40,11 +40,11 @@ const Investors = () => {
           >
             <Box
               cursor="pointer"
-              onClick={() => (setActiveTab('Big Banks'))}
+              onClick={() => (setActiveTab('Large Institutions'))}
               paddingBottom="10px"
-              borderBottom={activeTab === 'Big Banks' ? `1px solid #DBF6F8` : ''}
+              borderBottom={activeTab === 'Large Institutions' ? `1px solid #DBF6F8` : ''}
             >
-              Big Banks
+              Large Institutions
             </Box>
             <Box
               cursor="pointer"
@@ -55,7 +55,7 @@ const Investors = () => {
               Small Banks
             </Box>
           </Flex>
-          {activeTab === 'Big Banks' && (
+          {activeTab === 'Large Institutions' && (
             <Box
               fontSize={{ md:"56px", sm: "40px" }}
               whiteSpace="nowrap"
@@ -70,7 +70,7 @@ const Investors = () => {
           )}
 				</Container>
 			</Box>
-      {activeTab === 'Big Banks' && (
+      {activeTab === 'Large Institutions' && (
         <Box bg="#DBF6F8">
           <Container
             display="flex"
@@ -88,7 +88,7 @@ const Investors = () => {
             // whiteSpace="nowrap"
           >
             <Box
-              width={{ lg: "50%", sm: "100%" }}
+              width="100%"
               display="flex"
               flexDirection="column"
               alignItems="center"
@@ -99,42 +99,23 @@ const Investors = () => {
                 display="flex"
                 width="100%"
                 justifyContent="center"
-                height="200px"
-                width="250px"
+                height="225px"
+                width="300px"
                 margin={{ sm: "0 0 0 -25px", lg: "0 0 0 -48px", md: "0 0 0 -27px" }}
                 // marginLeft={{ lg: "-48px", sm: "0px"}}
               >
-                <img src="/landingPageIllustrations/socialFinanceCommercialReturn.svg" />
+                <img src="/landingPageIllustrations/manAndMachine.svg" />
               </Box>
               <Box
-                fontSize="2.5rem"
-                maxWidth={{ lg: '450px', md: "100%" }}
+                fontSize="40px"
               >
-                Social Financing with Commercial Returns
+                Man-and-Machine powered Lending
               </Box>
-            </Box>
-            <Box
-              mt={{ sm: "50px", lg: "0px" }}
-              width={{ lg: "50%", sm: "100%" }}
-              display="flex"
-              flexDirection="column"
-              justifyContent="flex-start"
-              alignItems="center"
-              // mt={{ sm: "30px", lg: "0px" }}
-            >
               <Box
-                display="flex"
-                width="100%"
-                justifyContent="center"
-                height="200px"
-                width="250px"
-                margin={{ sm: "50px 0 0 -25px", lg: "0 0 0 -48px", md: "0 0 0 -27px" }}
-                // marginLeft={{ lg: "-48px", sm: "0px"}}
-                // pt={{ lg: "20px", md: "0px" }}
+                fontSize="1.5rem"
               >
-                <img src="/landingPageIllustrations/lendingThroughSharing.svg" />
+                Lend your money to the right people for the right duration
               </Box>
-              <Box fontSize="2.5rem" maxWidth={{ lg: '450px', md: "100%" }}>Lending through Sharing - First of its kind</Box>
             </Box>
           </Container>
           {primaryInvestorContent.map((content, index) => {

@@ -1,18 +1,18 @@
 const primaryInvestorContent = [
 	{
-			heading: '20-40% higher Returns',
-			desc: 'through Risk Sharing techniques',
+			heading: '54-64%',
+			desc: 'Higher Returns',
 			img: '/landingPageIllustrations/higherReturns.svg',
 	},
 	{
-			heading: 'Man and Machine powered',
-			desc: 'Time varied Risk Management',
-			img: '/landingPageIllustrations/manAndMachine.svg',
+			heading: 'Higher Liquidity',
+			desc: 'Up to 50% lower holding period',
+			img: '/landingPageIllustrations/liquidity.svg',
 	},
 	{
-			heading: 'Higher Liquidity',
-			desc: 'upto 50% lower holding period',
-			img: '/landingPageIllustrations/highLiquidity.svg',
+			heading: '34-39%',
+			desc: 'Loss Reduction',
+			img: '/landingPageIllustrations/lossReduction.svg',
 	},
 ]
 
