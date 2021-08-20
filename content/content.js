@@ -18,22 +18,22 @@ const primaryInvestorContent = [
 
 const secondaryInvestorContent = [
 	{
-		heading: 'Great Returns',
-		desc: '(place holder)',
-		img: '',
+		heading: 'Safer Investments',
+		desc: 'Know the borrowers before you invest',
+		img: '/landingPageIllustrations/knowBorrower.svg',
 		bg: 'white'
 	},
 	{
-			heading: 'Safe Investments',
-			desc: 'through risk-sharing techniques',
-			img: '',
-			bg: 'white'
+		heading: 'Higher Liquidity',
+		desc: 'Up to 50% lower holding period',
+		img: '/landingPageIllustrations/liquidity.svg',
+		bg: 'white'
 	},
 	{
-			heading: 'Higher Liquidity',
-			desc: 'upto 50% lower holding period',
-			img: '',
-			bg: 'primary'
+		heading: '6-9%',
+		desc: 'Consistent Returns',
+		img: '/landingPageIllustrations/consistent.svg',
+		bg: 'primary'
 	},
 ];
 
