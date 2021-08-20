@@ -161,13 +161,130 @@ export default function Home() {
           </Box>
         </Container>
       </Box>
+			<Box
+				display="flex"
+				alignItems="center"
+				bg="white"
+				height="100%"
+			>
+        <Container
+					display="flex"
+          alignItems={{
+						lg: 'baseline',
+						sm: 'flex-start'
+					}}
+					justifyContent={{ md: "center", sm: "flex-start" }}
+					flexDirection={{ sm: "column", md: "row" }}
+					px={{
+						sm: "25px"
+					}}
+					py={{ sm: "80px", md: "80px", lg: "none" }}
+					minHeight="50vh"
+					flexWrap="wrap"
+        >
+          <Box
+						width={{ lg: "50%", sm: "100%" }}
+            display="flex"
+            flexDirection="column"
+						// alignItems={{ md: "center", sm: "flex-start" }}
+						alignItems="center"
+            justifyContent="flex-start"
+            minHeight="150px"
+						mt={{ lg: "43px", sm: "0px" }}
+          >
+						<Box
+							display="flex"
+							width="100%"
+							justifyContent="center"
+							height="200px"
+							width="250px"
+							margin={{ sm: "0 0 0 39px", lg: "0 0 0 -32px", md: "0 0 0 -27px" }}
+							marginLeft={{ lg: "30px", sm: "0px"}}
+						>
+							<img src="/landingPageIllustrations/easySignUp.svg" />
+						</Box>
+            <Box
+							fontSize={{ md: '2.5rem', sm: '40px' }}
+							width={{ sm: "85%", md: "100%", lg: "auto" }}
+							marginX="auto"
+							textAlign={{ md: "center", sm: "left"}}
+							mt="5px"
+						>
+							Easy
+						</Box>
+            <Box
+							// fontSize={{ md: '1.5rem', sm: '18px' }}
+							fontSize="1.5rem"
+							px={{ sm:"5px", md: "0px" }}
+							mt="8px"
+							width={{ sm: "85%", md: "100%", lg: "auto" }}
+							marginX="auto"
+							textAlign={{ md: "center", sm: "left"}}
+						>
+							Education -> Income/Debt -> Get your Est. Rate.
+						</Box>
+            {/* <Box
+							// fontSize={{ md: '1rem', sm: '18px' }}
+							fontSize="1rem"
+							px={{ sm:"5px", md: "0px" }}
+							mt="8px"
+							width={{ sm: "85%", md: "100%", lg: "auto" }}
+							marginX="auto"
+							textAlign={{ md: "center", sm: "left"}}
+						>
+							Get pre-approval without hurting your credit.
+						</Box> */}
+          </Box>
+          <Box
+            minHeight="150px"
+            width={{ lg: "50%", sm: "100%" }}
+            display="flex"
+            flexDirection="column"
+            justifyContent="flex-start"
+						// alignItems={{ md: "center", sm: "flex-start"}}
+						alignItems="center"
+						mt={{ lg: "0px", sm: "110px" }}
+          >
+						<Box
+							display="flex"
+							width="100%"
+							justifyContent="center"
+							height="200px"
+							width="250px"
+							margin={{ sm: "0 0 0 39px", lg: "0 0 0 -48px", md: "0 0 0 -27px" }}
+							// marginLeft={{ lg: "-32px", sm: "0px"}}
+							pt={{ md: "20px", sm: "0px"}}
+						>
+							<img src="/landingPageIllustrations/quick.svg" />
+						</Box>
+            <Box
+							fontSize={{ md: '2.5rem', sm: '40px' }}
+							width={{ sm: "85%", md: "100%", lg: "auto" }}
+							marginX="auto"
+							textAlign={{ md: "center", sm: "left"}}
+						>
+							Quick
+						</Box>
+            <Box
+							fontSize="1.5rem"
+							px={{ sm:"5px", md: "0px" }}
+							mt="8px"
+							width={{ sm: "85%", md: "100%", lg: "auto" }}
+							marginX="auto"
+							textAlign={{ md: "center", sm: "left"}}
+						>
+							Liked your interest rate? Signup and apply.
+						</Box>
+          </Box>
+        </Container>
+      </Box>
       {borrowersContent.map((content, index) => {
 				return (
 					<Flex
 						key={index}
 						py="100px"
 						color='black'
-						background={index % 2 === 0 ? 'white' : '#DBF6F8'}
+						background={index % 2 !== 0 ? 'white' : '#DBF6F8'}
 						// height={index === 0 || index === 1 ? "calc(50vh - 62.5px)" : "50vh"}
 						minHeight={{ lg: "50vh", sm: "50vh", md: "350px"}}
 						// minHeight="350px"

@@ -81,6 +81,12 @@ const borrowersContent = [
 			bg: 'white'
 	},
 	{
+		heading: 'No penalty',
+		desc: 'You can payoff whenever you want',
+		img: '/landingPageIllustrations/payAnytime.svg',
+		bg: 'white'
+	},
+	{
 			heading: 'Home Renovation',
 			desc: `Design your dream home. Leave the expenses to us.`,
 			img: '/landingPageIllustrations/focusOnHouseConstruction.svg',
