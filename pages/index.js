@@ -104,7 +104,7 @@ export default function Home() {
 							marginX="auto"
 							textAlign={{ md: "center", sm: "left"}}
 						>
-							We look at more than your credit history
+							We look at more than your credit history.
 						</Box>
             {/* <Box
 							// fontSize={{ md: '1rem', sm: '18px' }}
@@ -146,7 +146,7 @@ export default function Home() {
 							marginX="auto"
 							textAlign={{ md: "center", sm: "left"}}
 						>
-							Lowest interest in the industry.
+							Lowest interest in the industry
 						</Box>
             <Box
 							fontSize="1.5rem"

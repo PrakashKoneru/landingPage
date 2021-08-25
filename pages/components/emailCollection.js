@@ -59,7 +59,7 @@ export default ({ setFormSubmitted = () => {} }) => {
           mt="10px"
           justifyContent="flex-end"
         >
-          <Button color="white" type="submit">Keep me posted</Button>
+          <Button color="white" type="submit">Keep Me Posted</Button>
         </Flex>
       </form>
     </>

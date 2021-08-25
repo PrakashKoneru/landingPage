@@ -60,12 +60,12 @@ const Investors = () => {
               fontSize={{ md:"56px", sm: "40px" }}
               whiteSpace="nowrap"
             >
-              Lending done right.
+              Lending done right
             </Box>
           )}
           {activeTab === 'Small Institutions' && (
             <Box fontSize={{ md:"56px", sm: "40px" }} textAlign="center">
-              New and Safer Asset Class
+              New and safer asset class
             </Box>
           )}
 				</Container>
@@ -309,7 +309,8 @@ const Investors = () => {
                   >
                     <Box
                       m={{ sm: "0 0 0 -10px", md: '', lg: 'auto' }}
-                      w={{ sm: "100%", md: "250px", lg: "350px"}}
+                      // img width is a temp solution to handle overlarge images
+                      w={{ sm: "100%", md: "250px", lg: content.imgWidth ? content.imgWidth : "350px"}}
                       height="250px"
                       display="flex"
                       alignItems="center"

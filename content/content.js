@@ -1,7 +1,7 @@
 const primaryInvestorContent = [
 	{
 			heading: '54-64%',
-			desc: 'Higher Returns',
+			desc: 'Higher returns',
 			img: '/landingPageIllustrations/higherReturns.svg',
 	},
 	{
@@ -16,12 +16,14 @@ const primaryInvestorContent = [
 	},
 ]
 
+// img width is a temp solution to handle overlarge images
 const secondaryInvestorContent = [
 	{
 		heading: 'Safer Investments',
 		desc: 'Know the borrowers before you invest',
 		img: '/landingPageIllustrations/knowBorrower.svg',
-		bg: 'white'
+		bg: 'white',
+		imgWidth: "250px"
 	},
 	{
 		heading: 'Higher Liquidity',
@@ -69,6 +71,12 @@ const aboutUsContent = [
 
 const borrowersContent = [
 	{
+		heading: 'No penalty',
+		desc: 'You can payoff whenever you want.',
+		img: '/landingPageIllustrations/payAnytime.svg',
+		bg: 'white'
+	},
+	{
 			heading: 'Student Loans',
 			desc: 'Stop worrying about debt. Focus on your career.',
 			img: '/landingPageIllustrations/careerFocus.svg',
@@ -79,12 +87,6 @@ const borrowersContent = [
 			desc: 'Say NO to ridiculous APRs. Clear off the debt with a low interest loan.',
 			img: '/landingPageIllustrations/clearOffDebtChillSofa.svg',
 			bg: 'white'
-	},
-	{
-		heading: 'No penalty',
-		desc: 'You can payoff whenever you want',
-		img: '/landingPageIllustrations/payAnytime.svg',
-		bg: 'white'
 	},
 	{
 			heading: 'Home Renovation',
