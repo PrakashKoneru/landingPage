@@ -1,17 +1,17 @@
 const primaryInvestorContent = [
 	{
 			heading: '54-64%',
-			desc: 'Higher returns',
+			desc: 'Higher returns.',
 			img: '/landingPageIllustrations/higherReturns.svg',
 	},
 	{
 			heading: 'Higher Liquidity',
-			desc: 'Up to 50% lower holding period',
+			desc: 'Up to 50% lower holding period.',
 			img: '/landingPageIllustrations/liquidity.svg',
 	},
 	{
 			heading: '34-39%',
-			desc: 'Loss Reduction',
+			desc: 'Loss Reduction.',
 			img: '/landingPageIllustrations/lossReduction.svg',
 	},
 ]
@@ -20,20 +20,20 @@ const primaryInvestorContent = [
 const secondaryInvestorContent = [
 	{
 		heading: 'Safer Investments',
-		desc: 'Know the borrowers before you invest',
+		desc: 'Know the borrowers before you invest.',
 		img: '/landingPageIllustrations/knowBorrower.svg',
 		bg: 'white',
 		imgWidth: "250px"
 	},
 	{
 		heading: 'Higher Liquidity',
-		desc: 'Up to 50% lower holding period',
+		desc: 'Up to 50% lower holding period.',
 		img: '/landingPageIllustrations/liquidity.svg',
 		bg: 'white'
 	},
 	{
 		heading: '6-9%',
-		desc: 'Consistent Returns',
+		desc: 'Consistent Returns.',
 		img: '/landingPageIllustrations/consistent.svg',
 		bg: 'primary'
 	},

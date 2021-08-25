@@ -115,7 +115,7 @@ const Investors = () => {
               <Box
                 fontSize="1.35rem"
               >
-                Lend your money to the right people for the right duration
+                Lend your money to the right people for the right duration.
               </Box>
             </Box>
           </Container>
@@ -243,7 +243,7 @@ const Investors = () => {
               <Box
                 fontSize="1.35rem"
               >
-                Customized Loan Portfolios for your Risk Appetite
+                Customized Loan Portfolios for your Risk Appetite.
               </Box>
             </Box>
           </Container>
