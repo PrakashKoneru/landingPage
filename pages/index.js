@@ -221,7 +221,7 @@ export default function Home() {
 							marginX="auto"
 							textAlign={{ md: "center", sm: "left"}}
 						>
-							Education -> Income/Debt -> Get your Est. Rate.
+							Education -> Income/Debt -> Get your est. rate.
 						</Box>
             {/* <Box
 							// fontSize={{ md: '1rem', sm: '18px' }}
@@ -273,7 +273,7 @@ export default function Home() {
 							marginX="auto"
 							textAlign={{ md: "center", sm: "left"}}
 						>
-							Liked your interest rate? Signup and apply.
+							Liked your interest rate? Sign up and apply.
 						</Box>
           </Box>
         </Container>
@@ -383,7 +383,7 @@ export default function Home() {
 						<img src="/landingPageIllustrations/withYouTillEnd.svg" />
 					</Box>
 					<Box mt="25px">
-						We are with you until the end. We Promise.
+						We are with you until the end. We promise.
 					</Box>
 				</Container>
 			</Box>

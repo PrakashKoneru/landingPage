@@ -1,8 +1,15 @@
 const primaryInvestorContent = [
 	{
-			heading: '54-64%',
-			desc: 'Higher returns.',
-			img: '/landingPageIllustrations/higherReturns.svg',
+			0: {
+				heading: '54-64%',
+				desc: 'Higher returns.',
+				img: '/landingPageIllustrations/higherReturns.svg',
+			},
+			1: {
+				heading: '34%',
+				desc: 'Lower defaults.',
+				img: '/landingPageIllustrations/higherReturns.svg',
+			}
 	},
 	{
 			heading: 'Higher Liquidity',
@@ -11,7 +18,7 @@ const primaryInvestorContent = [
 	},
 	{
 			heading: '34-39%',
-			desc: 'Loss Reduction.',
+			desc: 'Loss reduction.',
 			img: '/landingPageIllustrations/lossReduction.svg',
 	},
 ]
@@ -33,7 +40,7 @@ const secondaryInvestorContent = [
 	},
 	{
 		heading: '6-9%',
-		desc: 'Consistent Returns.',
+		desc: 'Consistent returns.',
 		img: '/landingPageIllustrations/consistent.svg',
 		bg: 'primary'
 	},
@@ -71,8 +78,8 @@ const aboutUsContent = [
 
 const borrowersContent = [
 	{
-		heading: 'No penalty',
-		desc: 'You can payoff whenever you want.',
+		heading: 'No Penalty',
+		desc: 'You can pay off whenever you want.',
 		img: '/landingPageIllustrations/payAnytime.svg',
 		bg: 'white'
 	},

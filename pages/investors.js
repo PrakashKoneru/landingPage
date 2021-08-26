@@ -110,7 +110,7 @@ const Investors = () => {
               <Box
                 fontSize="40px"
               >
-                Man-and-Machine powered Lending
+                Man and machine powered lending
               </Box>
               <Box
                 fontSize="1.35rem"
@@ -120,6 +120,120 @@ const Investors = () => {
             </Box>
           </Container>
           {primaryInvestorContent.map((content, index) => {
+            if (content[0]) {
+              return (
+                <Flex
+                  key={index}
+                  py="100px"
+                  color='black'
+                  background={index % 2 === 0 ? 'white' : '#DBF6F8'}
+                  // height={index === 0 || index === 1 ? "calc(50vh - 62.5px)" : "50vh"}
+                  minHeight={{ lg: "50vh", sm: "50vh", md: "350px"}}
+                  // minHeight="350px"
+                  px={{ sm: "15px", lg: "0px" }}
+                >
+                  <Container
+                    display="flex"
+                    flexDirection={{
+                      lg: index % 2 === 0 ? 'row': 'row-reverse',
+                      md: 'column-reverse',
+                      sm: 'column-reverse'
+                    }}
+                    alignItems="center"
+                  >
+                    <Box
+                      w={{ lg: "10%", md: "0%", sm: "0%" }}
+                    >
+
+                    </Box>
+                    <Box
+                      w={{ lg: "40%", md:"100%", sm: "auto" }}
+                      marginX="auto"
+                      // margin="auto"
+                      mt={{ sm: "20px", md:"20px", lg: "0px"}}
+                      alignItems={{sm:"center", md: "center", lg: "center" }}
+                      display="inline-block"
+                      // flexDirection="column"
+                      // justifyContent="center"
+                    >
+                      <Flex
+                        flexDirection={{ sm: 'column', md: 'row' }}
+                        w="100%"
+                      >
+                        <Box
+                          w={{ sm: "100%", md: "50%" }}
+                          py={{ md: "5px", sm: "25px"}}
+                        >
+                          <Box
+                            fontSize="2.5rem"
+                            whiteSpace={{ sm: "nowrap", md: "wrap" }}
+                            textAlign={{ md: "center", sm: "center"}}
+                          >
+                            {content[0].heading}
+                          </Box>
+                          <Box
+                            fontSize="2.5rem"
+                            textAlign={{ md: "center", sm: "center"}}
+                          >
+                            {content[0].headingLine2}
+                          </Box>
+                          <Box
+                            textAlign={{ md: "center", sm: "center"}}
+                            whiteSpace="nowrap"
+                          >
+                            {content[0].desc}
+                          </Box>
+                        </Box>
+                        <Box
+                          w={{ sm: "100%", md: "50%" }}
+                          py={{ md: "5px", sm: "25px"}}
+                          borderLeft={{ sm: 'none', md: '1px solid black' }}
+                          borderTop={{ md: 'none', sm: '1px solid black' }}
+                        >
+                          <Box
+                            fontSize="2.5rem"
+                            whiteSpace={{ sm: "nowrap", md: "wrap" }}
+                            textAlign={{ md: "center", sm: "center"}}
+                          >
+                            {content[1].heading}
+                          </Box>
+                          <Box
+                            fontSize="2.5rem"
+                            textAlign={{ md: "center", sm: "center"}}
+                          >
+                            {content[1].headingLine2}
+                          </Box>
+                          <Box
+                            textAlign={{ md: "center", sm: "center"}}
+                            whiteSpace="nowrap"
+                          >
+                            {content[1].desc}
+                          </Box>
+                        </Box>
+                      </Flex>
+                    </Box>
+                    <Box
+                      w={{ lg: "40%", md: "250px", sm: "250px" }}
+                      h="200px"
+                      margin="auto"
+                    >
+                      <Box
+                        m={{ sm: "0 0 0 -10px", md: '', lg: 'auto' }}
+                        w={{ sm: "100%", md: "250px", lg: "350px"}}
+                        height="250px"
+                        display="flex"
+                        alignItems="center"
+                      >
+                        <Box mt="-65px">
+                          <img src={content[0].img}></img>
+                        </Box>
+                      </Box>
+                    </Box>
+                    <Box w="10%"></Box>
+                  </Container>
+                </Flex>
+              )
+            }
             return (
               <Flex
                 key={index}
@@ -243,7 +357,7 @@ const Investors = () => {
               <Box
                 fontSize="1.35rem"
               >
-                Customized Loan Portfolios for your Risk Appetite.
+                Customized loan portfolios for your risk appetite.
               </Box>
             </Box>
           </Container>
