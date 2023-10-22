@@ -165,7 +165,7 @@ export default function Simple() {
 								Lending Partners
 							</Link>
 							<Link
-								href='/borrowers'
+								href='https://borrowers.vercel.app/borrowers'
 								as={NextLink}
 								variant="navLink"
 								maxHeight="90px"
@@ -176,7 +176,7 @@ export default function Simple() {
 								Log In
 							</Link>
 							<Link
-								href='/borrowers/onboarding'
+								href='https://borrowers.vercel.app/borrowers/onboarding'
 								as={NextLink}
 								variant="navLink"
 								maxHeight="90px"
